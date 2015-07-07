@@ -1,0 +1,16 @@
+<h1>Android Fixed List View</h1>
+    <p>This library provide a fixed list view, e.g a list view that doesn&#39;t handle scroll itself. This means that this list view load all of its adapter&#39;s item when setting the adapter, there is no view recycling because the list view cannot know which items are shown and which items aren&#39;t. That&#39;s why <strong>this library is not relevant for big lists</strong>.</p>
+
+    <p>In this sample, FixedListView is useful because all drawer layout is within a ScrollView, It's typically a case where regular ListView isn't implementable. In fact here, we could use a ListView by setting header with user info image and checkboxes, and a footer with the RadioGroup, but in more complex layout structure, this would not be possible.</p>
+
+    <h3>Use case</h3>
+    <p>
+     - <strong>Your list do not have a lot of items</strong><br>
+     - Your layout is already in a ScrollView or something similar, and you can&#39;t add a regular ListView because of scroll conflicts<br>
+     - You just need to show a small number of rows, but adding items to a LinearLayout manually is too dirty coding for you (I agree)<br>
+     - You need to add a list in a complex layout, and don&#39;t need a complex regular ListView<br>
+    </p>
+    <h3>License:</h3>
+    <p>
+    <li>Application code - <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a></li>
+    </p>

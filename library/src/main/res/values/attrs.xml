@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FixedListView">
+        <attr name="dividersType">
+            <flag name="none" value="0" />
+            <flag name="middle" value="12" />
+            <flag name="end" value="23" />
+            <flag name="beginning" value="34" />
+        </attr>
+        <attr name="dividerColor" format="color" />
+        <attr name="dividerHeight" format="dimension" />
+    </declare-styleable>
+</resources>

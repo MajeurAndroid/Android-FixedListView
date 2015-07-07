@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="match_parent"
+    android:background="@color/icons"
+    android:layout_gravity="start">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/divider"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/background_teal">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Walter Smith"
+                android:textColor="@color/primary_text"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textName"
+                android:layout_alignLeft="@id/textName"
+                android:text="walter.smith@domain.com"
+                android:textColor="@color/primary_text"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable sync"
+            android:layout_margin="7dp"
+            android:checked="true" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable notifications"
+            android:layout_margin="7dp" />
+
+        <com.majeur.fixedlistview.FixedListView xmlns:z="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fixedListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            z:dividerColor="@color/divider"
+            z:dividerHeight="0.5dp"
+            z:dividersType="middle" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="7dp"
+            android:checkedButton="@+id/radio">
+
+            <RadioButton
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use main server" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use secondary server" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use local" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>
